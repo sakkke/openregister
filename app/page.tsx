@@ -25,8 +25,8 @@ export default function Home() {
         qrCodeSuccessCallback={onNewScanResult}
       />
       <ul>
-        {decodedTexts.map(decodedText => (
-          <li>{decodedText}</li>
+        {decodedTexts.map((decodedText, i) => (
+          <li key={i}>{decodedText}</li>
         ))}
       </ul>
     </main>
