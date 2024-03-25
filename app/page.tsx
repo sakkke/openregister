@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <HTML5QRCodePlugin
         fps={60}
-        qrbox={480}
+        qrbox={240}
         disableFlip={false}
         qrCodeSuccessCallback={onNewScanResult}
       />
